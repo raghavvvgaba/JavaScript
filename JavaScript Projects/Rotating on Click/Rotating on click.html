@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 10px;
+        }
+        .box{
+            color: brown;
+        }
+        .rotate{
+            rotate: 180deg;
+        }
+        .button{
+            border: 1px solid black;
+            width: 130px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hey I am a box
+        </div>
+    </div>
+    <div class="button">
+        Click here to rotate
+    </div>
+    <script >
+        let btn = document.querySelector(".button")
+function rotate() {
+    document.querySelector(".box").classList.toggle("rotate");
+}
+btn.addEventListener("click", rotate)
+    </script>
+</body>
+</html>

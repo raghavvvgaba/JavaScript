@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bg-color">
+    <h1>Random Background Color changer</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const random_color = function(){
+        
+        let a = Math.floor(Math.random() * 255) + 1;
+        let b = Math.floor(Math.random() * 255) + 1;
+        let c = Math.floor(Math.random() * 255) + 1;
+        document.getElementById("bg-color").style.backgroundColor = `rgb(${a},${b},${c})`
+
+    }
+    function start_timer(){
+        let timerId = setInterval(random_color, 1000, "hi");
+        document.getElementById("stop").addEventListener("click", stop_timer);
+        function stop_timer(){
+            clearInterval(timerId)
+        }
+    } 
+    
+    document.getElementById("start").addEventListener("click", start_timer);
+
+    
+</script>
+</html>

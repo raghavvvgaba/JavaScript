@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0; 
+ }
+ .container{
+     width: 100vh;
+     border: 1px solid black;
+ }
+ .card{
+     height: 110px;
+     background-color: black;
+     display: flex;
+     align-items: start;
+ }
+ .image img{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     height: 95px;
+     border-radius: 15px;
+ }
+ .content{
+     padding: 10px;
+     color: white;
+     /* border: 1px white solid; */
+     display: flex;
+     flex-direction: column;
+     gap: 9px;
+ }
+ .metadata{
+     color: lightgray;
+     /* border: 1px solid white; */
+     font-size: 12px;
+     display: flex;
+     align-content: space-around;
+     gap: 8px;
+ }
